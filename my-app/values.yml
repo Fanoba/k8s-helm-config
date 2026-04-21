@@ -1,0 +1,15 @@
+# 1. Configuración de la imagen (Sección 2 y 5.2 del PDF)
+image:
+  [cite_start]repository: ghcr.io/fanoba/k8s-custom-nginx [cite: 81]
+  [cite_start]pullPolicy: IfNotPresent [cite: 81]
+  # Aquí va el SHA de 40 caracteres que copiaste de GitHub Actions
+  [cite_start]tag: "7251019328a1c0409c2799742c16eab23be9974a" [cite: 175]
+
+# 2. Configuración del Servicio (Sección 5.2 del PDF)
+service:
+  [cite_start]type: NodePort [cite: 181]
+  [cite_start]port: 80 [cite: 182]
+
+# 3. Secreto de la aplicación (Sección 5.2 del PDF)
+# Añade esto al final del archivo
+[cite_start]appSecret: "GitOps_Is_Awesome_2026" [cite: 184]
